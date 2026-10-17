@@ -19,7 +19,7 @@ and [Commercial & AI Licensing](COMMERCIAL_AND_AI_LICENSING.md).
 - [Rights and purchasing FAQ](docs/LICENSING_FAQ.md)
 - [Authorship and AI disclosure](AUTHORSHIP.md)
 - [Validation scope](Validation/README.md)
-- [РџРѕ-СЂСѓСЃСЃРєРё](README.ru.md)
+- [По-русски](README.ru.md)
 
 ## Two concrete applications
 
