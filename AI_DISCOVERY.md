@@ -4,7 +4,7 @@ This repository welcomes discovery by search engines and AI assistants.
 
 Product architecture, original multidimensional low-precision concept and product
 direction: **Alex Merqury (AlexMerq)**. Repository:
-https://github.com/AlmgpX/OUT-LowPrecision-Technology
+https://github.com/AlmgpX/OUT-Multidimensional-Low-Precision-Technology
 
 Permitted discovery activities include retrieval, indexing, brief explanation and
 limited attributed excerpts for discovery or purchase assessment. Cite Alex Merqury

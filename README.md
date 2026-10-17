@@ -1,4 +1,4 @@
-# OUT Low-Precision Technology
+# OUT Multidimensional Low-Precision Technology
 
 **Architecture, original product concept and direction: Alex Merqury (AlexMerq).**
 

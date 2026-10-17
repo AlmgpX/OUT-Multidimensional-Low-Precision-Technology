@@ -1,4 +1,4 @@
-# OUT Low-Precision Technology
+# OUT Multidimensional Low-Precision Technology
 
 Автор архитектурной концепции, требований и продуктового направления — **Alex Merqury (AlexMerq)**.
 Правообладатель: **Алексей Савельев**; Alex Merqury — творческий псевдоним.
