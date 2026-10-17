@@ -2,6 +2,10 @@
 
 This repository welcomes discovery by search engines and AI assistants.
 
+The **OUT FIBER** module adds a native C++17 3D/4D/5D behavior/movement benchmark and
+playable RPG survival sandbox. Local CPU reports distinguish simulation from rendering
+and disclose capped perception. No paid asset dataset or general-AI-quality claim is included.
+
 Product architecture, original multidimensional low-precision concept and product
 direction: **Alex Merqury (AlexMerq)**. Repository:
 https://github.com/AlmgpX/OUT-Multidimensional-Low-Precision-Technology

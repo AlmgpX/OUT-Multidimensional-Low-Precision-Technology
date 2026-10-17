@@ -27,3 +27,11 @@ pull requests, Git LFS, releases, artifacts or future repository history.
 
 This boundary applies to this new repository. It does not erase or change content
 already present in any other repository, download, cache or previously shared archive.
+
+## OUT FIBER benchmark addition
+
+OUT FIBER publishes a new procedural benchmark teacher in source form. At process
+startup it generates its own small branch bank in memory; no fitted bank, paid asset
+payload, teacher corpus file or actor-trajectory dataset is committed. Aggregate CPU
+reports and one real native-window PNG are allowed publication evidence. This does
+not change the exclusions for OUT Guard/Motor assets or their original corpora/tools.

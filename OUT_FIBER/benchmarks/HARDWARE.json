@@ -1,0 +1,14 @@
+{
+  "cpu": {
+    "Name": "AMD Ryzen 7 3700X 8-Core Processor             ",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "os": {
+    "Caption": "Майкрософт Windows 11 Pro",
+    "Version": "10.0.22631"
+  },
+  "compiler": "MSVC 19.44.35207 x64 /O2 /fp:precise /MT /std:c++17",
+  "measurementDate": "2026-10-17 Europe/Minsk",
+  "scope": "Local machine; background load uncontrolled; no GPU or render time in headless reports."
+}

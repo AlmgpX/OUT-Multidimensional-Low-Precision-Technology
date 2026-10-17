@@ -21,7 +21,10 @@ and [Commercial & AI Licensing](COMMERCIAL_AND_AI_LICENSING.md).
 - [Validation scope](Validation/README.md)
 - [По-русски](README.ru.md)
 
-## Two concrete applications
+## Concrete applications
+
+**New: [OUT FIBER](OUT_FIBER/README.md)** — native C++17 RPG survival sandbox and
+3D/4D/5D behavior benchmark, with actual local measurements and no paid asset datasets.
 
 | Product | Mechanisms exposed for inspection | Limits |
 | --- | --- | --- |

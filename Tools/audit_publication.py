@@ -5,6 +5,13 @@ import hashlib,json,re,subprocess,sys
 root=Path(__file__).resolve().parents[1]
 provenance=json.loads((root/'PROVENANCE.json').read_text(encoding='utf-8'))
 errors=[]
+fiber_snapshot=root/'OUT_FIBER/SNAPSHOT.json'
+if fiber_snapshot.is_file():
+ snapshot=json.loads(fiber_snapshot.read_text(encoding='utf-8'))
+ for name,expected in snapshot['sourceSha256'].items():
+  p=root/'OUT_FIBER'/name
+  if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=expected:
+   errors.append('OUT FIBER source hash mismatch: '+name)
 for item in provenance['files']:
  p=root/item['path']
  if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=item['publishedSha256']:
@@ -16,20 +23,25 @@ except subprocess.CalledProcessError:
 if not listed:
  listed=[str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and '.git' not in p.parts and 'bin' not in p.parts and 'obj' not in p.parts]
 blocked_names={'GuardBuiltInTemporalModel.cs','OUTMotorData.cs','BakedModel_manifest.json'}
-blocked_ext={'.asset','.fbx','.glb','.gltf','.dll','.exe','.bin','.onnx','.npy','.npz','.csv','.jsonl','.zip','.tgz','.unitypackage'}
+blocked_ext={'.asset','.fbx','.glb','.gltf','.dll','.exe','.bin','.ofib','.onnx','.npy','.npz','.csv','.jsonl','.zip','.tgz','.unitypackage'}
 checked=0
 for name in listed:
  p=root/name
  if p.name in blocked_names or p.suffix.lower() in blocked_ext:
   errors.append('Data/binary-bearing file: '+name);continue
  data=p.read_bytes();checked+=1
+ if name.replace('\\','/')=='OUT_FIBER/docs/OUT_FIBER_Heather_Reach.png':
+  snapshot=json.loads((root/'OUT_FIBER/SNAPSHOT.json').read_text(encoding='utf-8'))
+  if not data.startswith(b'\x89PNG\r\n\x1a\n') or hashlib.sha256(data).hexdigest()!=snapshot['nativeScreenshotSha256']:
+   errors.append('Native screenshot signature/hash mismatch: '+name)
+  continue
  try:text=data.decode('utf-8-sig')
  except UnicodeDecodeError:errors.append('Unexpected binary: '+name);continue
  if p.suffix in {'.cs','.cpp','.h','.txt'} and re.search(r'"[A-Za-z0-9+/]{200,}={0,2}"',text):
   errors.append('Long encoded payload: '+name)
  if re.search(r'gh[pousr]_[A-Za-z0-9]{30,}|-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----',text):
   errors.append('Potential secret: '+name)
- if p.suffix in {'.cs','.cpp','.h'} and 'LicenseRef-OUT-Source-Review-1.0' not in text:
+ if p.suffix in {'.cs','.cpp','.h','.hpp'} and 'LicenseRef-OUT-Source-Review-1.0' not in text:
   errors.append('Missing source license notice: '+name)
 # The initial publication must not inherit the product repository's old data/history.
 try:

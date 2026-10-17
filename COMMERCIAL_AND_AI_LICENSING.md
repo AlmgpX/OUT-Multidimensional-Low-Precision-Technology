@@ -11,6 +11,11 @@ does not invent a store listing, a checkout URL or a bundled license for both pr
 The purchase EULA controls licensed versions, entities, seats, contractors and deployment.
 Companies need the appropriate license too; already licensed rights are not charged twice.
 
+**OUT FIBER** is a separate source-review benchmark. There is no invented store listing
+or automatic grant bundled with Guard/Motor purchases. Request a written commercial
+license for project use of FIBER. The publisher's local runnable build does not grant
+the public permission to compile, run or incorporate this source without applicable rights.
+
 ## Paid AI / ML rights
 
 Separate written AI/ML agreements can be negotiated for specific protected materials.
