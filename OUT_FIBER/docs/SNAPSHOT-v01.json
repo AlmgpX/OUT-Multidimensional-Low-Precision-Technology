@@ -1,0 +1,29 @@
+{
+  "module": "OUT FIBER / Heather Reach",
+  "rightsHolder": "Алексей Савельев",
+  "publishingPseudonym": "Alex Merqury",
+  "date": "2026-10-17",
+  "sourceInputsSha256": {
+    "OUT_FIBER_TALES_Вересковый_предел_v01.html": "1200cd7ad86457c7fdae443ce9e754e48fd65adab4541e3dcd0a350323640a6a",
+    "OUT_FIBER_LAB_Crystal_Field_03.html": "f30083567235c5c319fe5b2e960d40ae7cbb81ae3f0f908c11afb18593981e8d"
+  },
+  "originalInputsPublished": false,
+  "paidDatasetsIncluded": false,
+  "nativeScreenshotSha256": "4681b876c7e529dd1bf62f639fedf950cdaa56460ab504423497ae686ea355ea",
+  "bankBytes": 11392,
+  "mindBytes": 52,
+  "validationAssertions": 4473,
+  "validationScope": "Native Windows C++ module; not the historical Lab 0.1 gate or real-world AI efficacy.",
+  "sourceSha256": {
+    "CMakeLists.txt": "8439e957688fec2040f35844707311d3ca6701b3abb287a970204e9e551384ff",
+    "include/fiber.hpp": "0cda837e65cc5f141b224d7d6521b8e4e68ef8792f728432ab26e2715f67afda",
+    "src/bank.cpp": "d0a44aa0cf2aa6d1f33bf20acff3076584915b363973264e0af13d2bca174e3b",
+    "src/benchmark.cpp": "17cffb09c4c98e74db0574bb9b8221ded44a29d3ad7b9e26701448351d5c0b3a",
+    "src/gui_win32.cpp": "588f6a4637b9f32498909cb0140d327d1581420d5e3659773536da3639b392f1",
+    "src/main.cpp": "dd8b3b325afdf83fc57357f39fd19b2eee901950187ff9d0c881aab5633abf2b",
+    "src/world.cpp": "ff822a715b63a6e4bb848376244795ac3d4fef951ce392e41da5aed899ddc3d5",
+    "tests/selftest.cpp": "dd83394cc7ac9a52ee105e32ef1afb292ca3f02e3bc7218f3f88ee2eca458606",
+    "tools/build_windows.cmd": "089b08f7e02d68dab49f2fb73b85ee5d09e2129e68f3c53b9d5ad7ba3597c71b",
+    "tools/run_benchmarks.ps1": "3b78ba165fa5baac200d926d5136c8901b6cd82ff20d1a5072acb49e14ae50a7"
+  }
+}

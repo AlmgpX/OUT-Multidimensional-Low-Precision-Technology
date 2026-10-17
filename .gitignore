@@ -12,4 +12,5 @@
 *.unitypackage
 *.tgz
 *.zip
+*.save
 .DS_Store

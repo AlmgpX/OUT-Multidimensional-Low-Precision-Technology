@@ -18,297 +18,298 @@
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardAuthoritativeWorld.cs",
       "originalSha256": "050e066d2c6ec7e8ec14bfa606b03e8f200bd3fd0a871db22fb9ba25078ccf1c",
-      "publishedSha256": "14ec6170ba5eaa864c61be83b60b0a41605cc91caeabb2665ba3ce062896b412",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "6b9afeac282c83c8e546829c74dc8cc7a0c426f8db8a8acbbbe7f9470a48739c",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardBehavior.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardBehavior.cs",
       "originalSha256": "c667d93be0d6fa35d48ea5c7ecbb5541c5849e940c869e96683fb219ac4986fe",
-      "publishedSha256": "42eddf87f4db6f7f7805f91a054653f227a0af337f5b4f3e9d89c5146ea15394",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "a9431c1c02dc5d50bd3701765ad2980d523499b7c2d9af40d4a07b797f349b81",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardClock.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardClock.cs",
       "originalSha256": "eeba7dfff150a570ca31add1673654ebe0428f332fbedf194a1e7e07acfcee86",
-      "publishedSha256": "849155b4408bb0501e8991fd1c8dae52ea8de1d3adb3b75270378d1433e9d8e9",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "5198f2dc35bd71485cea80648f665b583cad1362283baf10594c26c7834ca842",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardCodec.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardCodec.cs",
       "originalSha256": "a7227c25e3b79cce078b6c6552a643ca6d5cd04202348fab4ada177aacd6a6cf",
-      "publishedSha256": "13d987431933452a2962b6aae3a309d68822dafbc2572e463a5649e9588ac7bf",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "746ddce6b1eff8e3575fed09ee07df7022c09267331268221fce67ee90b128f0",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardEvidence.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardEvidence.cs",
       "originalSha256": "8e5fce5590d9df1096c3c378942e59eb129f552c8d27dcd012a4eac6f688a221",
-      "publishedSha256": "ee73448919b3c8044de77d61e0768b26fc3cbf45b650de0f19ce6d9b8d80af1a",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "af2b0f19f08fcdefa6a702f3bfbbb4197e6ab65e4b543efdb5f19d1984029aa7",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardHandshake.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardHandshake.cs",
       "originalSha256": "f163a30742c8fff566de6f07a707fe5f2aed811e88df20e6482362eba8851e71",
-      "publishedSha256": "3863a86e54a197360f07e1f539194631a58078895b4feccb5c9e30ec04334c66",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "573d92eb30e49d597ef1ad659f6a0a27bb21fde74e11c6b426ec3daf4b116d85",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardIntegrity.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardIntegrity.cs",
       "originalSha256": "28650dce1357e663c72f12fc157f20dc3961432e7f58a3e554a03654a4cd9ff4",
-      "publishedSha256": "859a2795d330ea23de0b502908c7796557dce8cbfe8923f14d976817d0fe090e",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "cc86fc20805a06cdf7f151c0c7134f68e58f6857bc04da19cd4e07284c9d51ba",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/GuardTemporalRisk.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/GuardTemporalRisk.cs",
       "originalSha256": "c1498d476beb152fa8e04b4ed93289bd093ea8d16f27698b018b1cb0e651efa6",
-      "publishedSha256": "9a56ff1106faddb5354a1414695a4ef384ae23fe36b97160e502b8861772752c",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "7430835de01a29b2adcf3d1b556631deac85113201434d7f2eed9944f111d4c5",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTGuard/Core/ProtectedValues.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Runtime/Core/ProtectedValues.cs",
       "originalSha256": "932737b4b790df4b350d82876a03e1788a1000f4e76fb51fe79bca1787be8b69",
-      "publishedSha256": "e352fa53c6b87fe6a916eea8b8df441e68c193d794e51919d407924dc9f554fe",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "95dc3447d9fc24d598f8d6114579f4b4631e3076dd9a735a965646e5b9180abe",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorAnimationBank.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorAnimationBank.cs",
       "originalSha256": "6b917fc255c298410fa393be25aeef26e00e6ab2385fa127fdf7af47ebfd1cab",
-      "publishedSha256": "2825df5597fa95925448f13d75a49218b956056525302eba7ebe8bff4a9bb9e8",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "9248bb23963d11738b9d8e84058b95667eb5c300efb28695843b4977f7fd066a",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorArchetype.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorArchetype.cs",
       "originalSha256": "93332feda70b3b4c0516a56c2128ec42703e5ee547140b96089dd5be096933c7",
-      "publishedSha256": "62076d56817ee0a127c83b4c0377805c4e1a6aeb674d1f78513bd37fc13246aa",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "f446478d30fa3158452fad60662c39baa70ba50921d3b722f891c942364dd966",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorBloodPool.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorBloodPool.cs",
       "originalSha256": "fc0dddbf928efa452d85e3b72788b4fba8270d4f17e0fd46c151baa025b3d55b",
-      "publishedSha256": "ca8aa297f530dc6cacb559c748edca1ff38b6397dbc3d742794c7fa8726ad83a",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "41422ad6ef21beb45c20d1e4a7f21951571fde3ed00e3d69feedc0482262e459",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorCrowd.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorCrowd.cs",
       "originalSha256": "161a122b3a8720a3e9ffabaf02ee79ead8d56e3204c2399ae9d2db3ebd714348",
-      "publishedSha256": "b3ed5f47c97eea9b6a1ba7622d6f5574d6e1099f177fff12a439fe0f6f00935c",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "8011b9cbc574befbdfe3dcd07ba09c1a4dce6080661e37737d51b6231a7da2ed",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorEquipmentRenderer.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorEquipmentRenderer.cs",
       "originalSha256": "371ce493d1000cd5b3d5ecffa766f76c36ef0b770565774d3e1edbb8a2bff1a4",
-      "publishedSha256": "b00f67dd4ff425a384717887ea31ebcb2b2e03bada86cb8a47ca0d1de64da5de",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "2306989cb350fc8cf8c0a5d56b7c42e527c8aa207f8afe60270632b03f43c326",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorEventQueue.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorEventQueue.cs",
       "originalSha256": "cf0b87452814b8a6d27c45c91c30c832a312f0ce6a351ce4279ad7c9ba6116c4",
-      "publishedSha256": "90579e32065092df3e6828dddf549bffe47fefe31c9238f14e1957ca80a50a36",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "2fbb972da4bc578623e85b55730e8e704a3d20b1f94f6b0d467639fd05f2afa2",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorFlowField.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorFlowField.cs",
       "originalSha256": "b79a4e8943c5b95f06bf649f215bef504a69164af747039887615c177d986940",
-      "publishedSha256": "4398580cbda3e0629e07ab497be9f6d1097af3f9477b38498ba48d160c23693d",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "9b1ab62fca5c5f10396381faa69a44ae5ad9453f532572c0105b9eb0471c3eec",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorFootPlanner.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorFootPlanner.cs",
       "originalSha256": "c8c71b5f82b3f5b57c1637501be627bfd31e0ddd417c08f3fff2700436177bf7",
-      "publishedSha256": "371aa45bc442c4169a40fbc604950ad02f69f0124bdb0b33c338e70c4cfde630",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "d7ace3a0d87da4fca6fe75f9e5b7ad12a618faf5cadb41306303894e6bcee3af",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorInjuryScheduler.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorInjuryScheduler.cs",
       "originalSha256": "895aae4d87e52ef44bafde74d8f0b1e70534d0b3091c7846ace1e4c12f600269",
-      "publishedSha256": "c4824e9bd12df5e9bd3f5f794dc95283f82026c8c1904e1d74259b3017ed9334",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "609a923b282055ca545346b3d55d91d19c0bcf78785e6a83fe92fad680ed87ec",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorInstancedRenderer.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorInstancedRenderer.cs",
       "originalSha256": "1aaa36e4c0b2ff271f390eabfd519184ac095611924c9c265e2834b8700a5c5c",
-      "publishedSha256": "f7bc1af2ae532b736f2de525a18f4a1aa143298a4353c79521adc1d50ecc94a9",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "9cbb23da6774763c05c25fec4b04cacf607f56990b6305bef991139c669a5346",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorMeleeCombat.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorMeleeCombat.cs",
       "originalSha256": "d9eaf2512192fc9ae43ead499017ac7cdaf62cc8fc2502fac0ce9992968eaa4e",
-      "publishedSha256": "50599a59cac8bf7126ac9a0a26ec1be8ebafe014b4410c4133719fa7e830abf5",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "741dbfaed91dde70e5d6ea1f784cd6ef6fb492196b3aad57316c38a717df21e8",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorMotionCache.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorMotionCache.cs",
       "originalSha256": "22c9bd2690edd5e906cb23ddbcc10ae818ed7f7bda95e76116e5887846b608c1",
-      "publishedSha256": "5bf897f1ef8684d5668cc1490d2ff8ce95f8b15bc8f86b0caa37109da5d2ad54",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "54330a6b9b97547202abe0233c9ae705227768e5f834c990dd1600632cba90a4",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorNative.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorNative.cs",
       "originalSha256": "1b2a00d59025aa31ed9c1d82ed5fc057f0e24b9e485664c1ab0de27c84c9cf51",
-      "publishedSha256": "06f192707aba6705223dae3852c6d52678fb24f592db9c52745e9b61ad38ecba",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "684bd9e1f4530581ac8162b89f44e64206f25f61324fe65a628e8dd8967efd8a",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorProjectiles.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorProjectiles.cs",
       "originalSha256": "3d46a3a97b0d32e3438b57a5058853635b1d7b2aa8ca2d1c760a805ed2690d26",
-      "publishedSha256": "d0245d477e96e99bb882a9111baf97555e8463e64bcbbd369aac6bb586b48005",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "767bf6c5f58dd84a2408f814d9219615c8ef19026488d8935c7d6d61ea54978e",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorResponseProfile.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorResponseProfile.cs",
       "originalSha256": "69c2948959e91e7db6411f21c49509d7c370ed4331b6e49f4b33b43c6c111579",
-      "publishedSha256": "7beb9e141243c243b1e34d113ca539e2a8330568c9878c193488d83e948df04f",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "d7a9c4c9a77c962a2c7dca0969901d950c64af0cf9fd43a0b7cbe02139222eae",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorRigView.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorRigView.cs",
       "originalSha256": "751f93dd8118b1a82f75e05a8b16c25db7b0b179171d22a50d0b01fd9fe1a1e7",
-      "publishedSha256": "25b3a6c9b572c451612a334a452e2918eb120792b24eaa7c9f9069abfd135dd1",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "f0f547a737051016e10835c4b83b8fa2579c619b10bc2f0242b93d0992e83f3d",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorRTSSimulation.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorRTSSimulation.cs",
       "originalSha256": "0a05535850e5798c5bdb3e02af62d218e97faf33ecd07b332903d6e5e4fd7eb8",
-      "publishedSha256": "594dfa55306b8a5f6b34b751be551f99abf507f3bfabf3c35539d116c20b595b",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "fdb11bdb4d0013af0e09abb3e8f05e7c7c3cd97fe8967d6d67275a5e015af68f",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorSettings.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorSettings.cs",
       "originalSha256": "6c80beda35377cd3a0697683469bdcfff721b799665455283e12814e86bad7dd",
-      "publishedSha256": "e8a57de371ac64e967af76e15de2572634586710d26c6e0958f45b1242df2558",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "af880d041959f68aa15b1b7f991006d07a34a7851db98cd339ae0fd0ab657bb2",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Runtime/OUTMotorWorld.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Runtime/OUTMotorWorld.cs",
       "originalSha256": "28dc2e4bf95bcda07cc626ddbfb4df0fa27db08692b879197dbed64d97b6097a",
-      "publishedSha256": "79eef2833beb0ce69893f7278abc4517d1d155ba380d00fce6cc0cb0253b8de6",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "bfcf3a404a0456ca545488a1b2fd8f3458325d5498767970835534ff514637ee",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Native/OUTMotorNative.cpp",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Native~/OUTMotorNative.cpp",
       "originalSha256": "e6a30d50bf83f3dea647dc54c896c0ded665e8650016d6d841439c808d4d4010",
-      "publishedSha256": "d68b270e170af3ad31676a79f1a28408318f77d9d6d257caf76368b9e30c7e5f",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "19a6d344c6787b922f64604894b21f4451636a50bcce9887a4f91f46be954692",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Native/OUTMotorNative.h",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Native~/OUTMotorNative.h",
       "originalSha256": "c44fc6b5d988278750efbde933572a4aba14fd8bf0b2f15692d44ccfcf5f551d",
-      "publishedSha256": "378e4665fdce2c3f01a86aed0e8ac49138c929e42ab95c88740e1fca32096a28",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "f5ec6a00a232f25c00af7514e7f9c448261a904315f1bdbde15de23a3b300005",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Source/OUTMotor/Native/CMakeLists.txt",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Native~/CMakeLists.txt",
       "originalSha256": "bb7411842f924620fcdb93e84e1944293a5e57006f3caccceefa18016527bcc9",
-      "publishedSha256": "248199a704ebaa64bb78dac14a6aafc1e93a7eed9b7b16c3dfd9755a47c132bd",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "f387722fded3b2a7b048cfa589269bedb0cb12f2bcd4635f51a05800f48873d1",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Validation/OUTMotor/OUTMotorTargetPrecisionTests.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Tests/Editor/OUTMotorTargetPrecisionTests.cs",
       "originalSha256": "f61e0c9e348d4daf6a66d81efc0c196a944ed948bde18969e7e3efcae2694a32",
-      "publishedSha256": "1371deb757c14b7ad7fe2c296f70f3d1bccf1d2eea8a69b12da215675fb0c2e7",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "a783205c618db3a4c8fa036f2b12c9357b0eae5b71006ea69cd11cf967468c2a",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Validation/OUTMotor/OUTMotorMotionCacheTests.cs",
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Tests/Editor/OUTMotorMotionCacheTests.cs",
       "originalSha256": "8b8f568a903060cd55811e081ccaedca16c24aeaecfb800cc16e7bca70e0ea51",
-      "publishedSha256": "2084daaa7409c4cf94382e142c927eb82d219b77214932c85767fe51af5a2c7b",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "411e9780a639530744b3f2f4460318ba9469bff381552d6bc37e0dddaa5f7dc5",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Validation/OUTGuard/GuardSecurityChecks.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Demo/GuardSecurityChecks.cs",
       "originalSha256": "e4ba9570d95fa8b233733fb95f6d4d9e9b7c8207d1aa11d886ccfcf7f0e8d090",
-      "publishedSha256": "587fa02d8e3c19150e55ff3c229536cb4ac6e0433da88599c263086bf3c5b03c",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "9a2b78b1a4d37de146de5a205f2400ccba87509e4965c8b7a2ca460e137b2d66",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Validation/OUTGuard/GuardAuthoritativeChecks.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Assets/OUT_Guard/Demo/GuardAuthoritativeChecks.cs",
       "originalSha256": "01bbc298578987e01613abb4a3f2fbf2181c24bfd503b7db634b834f0c73bd14",
-      "publishedSha256": "a6d91874f3b022878312b5197e222322ce14cba376cc0f595b457fcfdde56c14",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "77703086fed8acfc07310960f5fb26d4b132c94e4114c51daaa7fa39397fd191",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Validation/OUTGuard/CoreChecks.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Tools/OUTGuard/CoreChecks.cs",
       "originalSha256": "b38b1048f4fddaa4beae870e9c60d235bab59a0bfe7c0ddd399cb08b5823167a",
-      "publishedSha256": "a6bfc6a905d25f6567d9940500fbfa531ded10b99637223aa1ce7f59b2f2a345",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "bb44ec608df9636db961785ab0aca38d1de89023744e139193336e46f6e28c0d",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     },
     {
       "path": "Validation/OUTGuard/SecurityChecks.cs",
       "product": "OUT Guard",
       "originalRelativePath": "Tools/OUTGuard/SecurityChecks.cs",
       "originalSha256": "97b7fbb57672455aecb23085f70047c20e88324a2fdd6fa376c7bc2ca8ac266e",
-      "publishedSha256": "49c2c1fb367167d76d0de1c6738c46edbc89c4ebd5c68c82db56b8947e03d0a0",
-      "change": "License notice added for code; text line endings normalized. No algorithm edits."
+      "publishedSha256": "c6941a979b6a2317b7375fffb592795d4113458837dee5984ed682c4776c7bba",
+      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
     }
   ],
-  "publishingPseudonym": "Alex Merqury (AlexMerq)"
+  "publishingPseudonym": "Alex Merqury (AlexMerq)",
+  "licenseHeaderReviewDate": "2026-10-18"
 }

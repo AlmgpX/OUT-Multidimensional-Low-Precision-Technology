@@ -1,8 +1,9 @@
+# SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
 # Copyright (c) 2026 Алексей Савельев. LicenseRef-OUT-Source-Review-1.0.
 cmake_minimum_required(VERSION 3.20)
-project(OUT_FIBER VERSION 0.1.0 LANGUAGES CXX)
+project(OUT_FIBER VERSION 0.2.0 LANGUAGES CXX)
 find_package(Threads REQUIRED)
-add_executable(OUT_FIBER src/main.cpp src/bank.cpp src/world.cpp src/benchmark.cpp tests/selftest.cpp)
+add_executable(OUT_FIBER src/main.cpp src/bank.cpp src/world.cpp src/life.cpp src/sandbox.cpp src/content.cpp src/benchmark.cpp tests/selftest.cpp)
 target_include_directories(OUT_FIBER PRIVATE include)
 target_compile_features(OUT_FIBER PRIVATE cxx_std_17)
 target_link_libraries(OUT_FIBER PRIVATE Threads::Threads)

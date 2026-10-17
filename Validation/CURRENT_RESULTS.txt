@@ -1,7 +1,9 @@
-Publication snapshot validation / 2026-10-17
-OUT Guard core: PASS 497 checks; protected-read loop allocated 0 managed bytes over 100000 reads.
-OUT Guard security/reference-server scenarios: PASS 63 cases; 0 failed.
+Publication snapshot validation / 2026-10-18
+OUT Guard core rerun after license-header changes: PASS 497 checks; protected-read loop allocated 0 managed bytes over 100000 reads.
+OUT Guard security/reference-server rerun: PASS 63 cases; 0 failed.
 The excluded shipped temporal model was not evaluated or rebuilt.
-OUT Motor Unity tests and native build were not rerun for this source-only snapshot.
-Publication audit: source hashes and excluded data/payload checks passed before publication.
+OUT Motor Unity tests and Motor native build were not rerun for this source-only snapshot; only license headers changed here.
+OUT FIBER Tales 0.2: PASS 2282 assertions; 11 valid headless reports, 1-vs-8-worker 4096 LOD replay identical.
+See OUT_FIBER/benchmarks/v02/RESULTS.md for workload and limits.
+Publication audit enforces license-first source headers, source/screenshot hashes and excluded paid data/payload paths.
 No real-game detection benchmark, complete Unity import or industry certification is claimed.

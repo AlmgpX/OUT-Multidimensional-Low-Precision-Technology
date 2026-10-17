@@ -1,1 +1,2 @@
+<!-- SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0; see ../../LICENSE -->
 <Project><PropertyGroup><BaseIntermediateOutputPath>obj/$(MSBuildProjectName)/</BaseIntermediateOutputPath><OutputPath>bin/$(MSBuildProjectName)/</OutputPath></PropertyGroup></Project>

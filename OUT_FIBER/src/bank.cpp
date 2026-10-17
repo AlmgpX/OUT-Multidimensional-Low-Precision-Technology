@@ -1,5 +1,5 @@
-// Copyright (c) 2026 Алексей Савельев (Alex Merqury / AlexMerq).
 // SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
+// Copyright (c) 2026 Алексей Савельев (Alex Merqury / AlexMerq).
 #include "fiber.hpp"
 #include <algorithm>
 #include <cmath>
@@ -12,7 +12,10 @@ uint32_t hash(uint32_t a,uint32_t b,uint32_t c,uint32_t d){
 }
 float random01(uint32_t h){return float(h>>8)*(1.f/16777216.f);}
 const char* actionName(int a){static const char* n[]={"ROUTINE","INVESTIGATE","ENGAGE","AID","FLEE","REPORT"};return n[std::max(0,std::min(5,a))];}
-const char* roleName(int a){static const char* n[]={"Citizen","Watch","Trader","Healer","Bandit","Wolf"};return n[std::max(0,std::min(5,a))];}
+const char* roleName(int a){static const char* n[]={"Житель","Стражник","Торговец","Лекарь","Разбойник","Волк","Охотник","Ремесленник","Трактирщик","Учёный"};return n[std::max(0,std::min(9,a))];}
+const char* lifeName(int a){static const char* n[]={"в пути","работает","спит","ест","пьёт","общается","лечится","патрулирует","собирает травы","отдыхает","ищет добычу","молится"};return n[std::max(0,std::min(11,a))];}
+const char* itemName(int a){static const char* n[]={"Ржаной хлеб","Вода","Вереск","Ягоды","Тёмное вино","Серебряный оберег","Чужое кольцо","Обрывок карты","Запечатанное письмо","Масляный след","Кошелёк Летты","Чёрный ключ","Осколок реликвии","Древесина","Камень","Волокно","Семена","Каменный топор","Каменная кирка"};return n[std::max(0,std::min(int(ItemCount)-1,a))];}
+int itemValue(int a){static const int v[]={4,1,6,4,9,19,24,11,0,0,0,0,34,2,2,2,1,12,14};return v[std::max(0,std::min(int(ItemCount)-1,a))];}
 const char* modeName(Mode m){switch(m){case Mode::Strict:return "STRICT";case Mode::Overlap:return "OVERLAP+MEMORY";case Mode::Exploratory:return "EXPLORATORY";default:return "UTILITY";}}
 static int bin(float v){return std::min(3,int(clamp(v)*4));}
 int Bank::address3(float a,float b,float c){return bin(a)+4*bin(b)+16*bin(c);}
@@ -50,7 +53,7 @@ Bank::Bank(){
         for(int k=0;k<Branches;k++){int other=cell*Branches+k;if(other==slot||!branches_[other].support)continue;float delta=0;for(int j=0;j<4;j++)delta+=(gates[slot][row+j]-gates[other][row+j])*feature[j];if(delta>.46f)continue;
             for(int j=0;j<4;j++){gates[slot][row+j]=clamp(gates[slot][row+j]+lr*feature[j],-2.5f,2.5f);gates[other][row+j]=clamp(gates[other][row+j]-lr*.72f*feature[j],-2.5f,2.5f);}}
     };
-    for(uint32_t i=0;i<24000;i++){
+    for(uint32_t i=0;i<48000;i++){
         uint32_t v=hash(0xF1B3,i);float d=random01(v),n=random01(hash(v,1)),h=random01(hash(v,2));
         if(i<2048){int cell=int(i/32);d=(float(cell%4)+random01(v))/4;n=(float((cell/4)%4)+random01(hash(v,1)))/4;h=(float(cell/16)+random01(hash(v,2)))/4;}
         learn(d,n,h,uint8_t(i%4));
@@ -72,13 +75,70 @@ Bank::Bank(){
             int off=index*3+a/2;context_[off]|=uint8_t(std::max(0,std::min(15,value)))<<((a%2)*4);
         }
     }
+    // Refit a separate 5D daily-life policy on stratified synthetic states.
+    // Only aggregate int4 scores survive initialization; no corpus is retained.
+    for(int h=0;h<4;h++)for(int t=0;t<4;t++)for(int f=0;f<4;f++)for(int p=0;p<4;p++)for(int role=0;role<4;role++){
+        std::array<float,LifeCount> mean{};int address=address5(h,t,f,p,role);
+        for(int sample=0;sample<48;sample++){
+            uint32_t key=hash(0x1F3,address,sample);float hunger=(h+random01(key))/4,thirst=(t+random01(hash(key,1)))/4,fatigue=(f+random01(hash(key,2)))/4,hour=p*6+random01(hash(key,3))*6;
+            bool day=hour>=7&&hour<18,night=hour<6||hour>=22;std::array<float,LifeCount> utility{};
+            utility[Travel]=.10f;utility[Work]=day?.78f:.13f;utility[Sleep]=fatigue*.9f+(night?.65f:0);
+            utility[Eat]=hunger*1.55f-.15f;utility[Drink]=thirst*1.7f-.15f;utility[Socialize]=hour>=18&&hour<22?.8f:.2f;
+            utility[Recover]=.1f;utility[Patrol]=role==1?.90f:.05f;utility[Forage]=role==0&&day?.57f:.1f;utility[Loiter]=.25f;
+            utility[Rob]=role==3&&!day?.88f:.03f;utility[Pray]=hour>=6&&hour<8?.6f:.1f;
+            if(role==3){utility[Work]=.1f;utility[Sleep]=fatigue*.9f+(day?.55f:0);utility[Patrol]=.1f;}
+            for(int a=0;a<LifeCount;a++)mean[a]+=clamp(utility[a]/1.8f);
+        }
+        for(int a=0;a<LifeCount;a++){int code=int(std::lround(mean[a]/48*15));life_[address*6+a/2]|=uint8_t(code)<<((a%2)*4);}
+    }
+    // Tales' social teacher, refitted across all relationship/alarm/cue/persona cells.
+    for(int persona=0;persona<4;persona++)for(int cue=0;cue<11;cue++)for(int stakes=0;stakes<4;stakes++)for(int alarm=0;alarm<4;alarm++)for(int relation=0;relation<4;relation++){
+        int address=relation+4*alarm+16*stakes+64*cue+704*persona;std::array<int,10> votes{};
+        for(int sample=0;sample<32;sample++){
+            uint32_t k=hash(88123,address,sample);float aff=(relation+random01(k))*.5f-1,al=(alarm+random01(hash(k,1)))*.5f-1,st=(stakes+random01(hash(k,2)))*.5f-1;
+            float brave=(persona&1)?.78f:.28f,merc=(persona&2)?.8f:.15f;int mode=0;
+            if(al>.3f||cue==8||cue==9)mode=(cue==8||cue==9)?(brave>.54f?6:7):(brave>.45f?6:5);
+            else if(cue==6)mode=st>.12f?5:2;else if(cue==7)mode=brave>.58f?6:3;
+            else if(cue==10)mode=aff>-.35f?8:2;else if(cue==4)mode=merc>.3f||aff>-.1f?4:3;
+            else if(cue==5)mode=aff>0?8:4;else if(cue==3)mode=aff>-.55f?1:2;
+            else if(cue==2)mode=aff>.1f?1:2;else if(cue==1)mode=st>.4f&&aff<-.1f?9:2;
+            else mode=aff>.25f?1:aff<-.25f?2:0;
+            votes[mode]++;
+        }
+        int winner=0;for(int a=1;a<10;a++)if(votes[a]>votes[winner])winner=a;
+        social_[address*2]=uint8_t(winner);social_[address*2+1]=uint8_t(votes[winner]*255/32);
+    }
+}
+int Bank::socialStance(float relation,float alarm,float stakes,int cue,float bravery,float greed)const{
+    int persona=(bravery>.54f?1:0)|(greed>.3f?2:0);int address=bin((relation+1)*.5f)+4*bin((alarm+1)*.5f)+16*bin((stakes+1)*.5f)+64*std::max(0,std::min(10,cue))+704*persona;
+    return social_[address*2];
+}
+Life Bank::chooseLife(float h,float t,float f,float hour,Role role,float loneliness,float stress,uint32_t identity)const{
+    int group=role==Guard?1:role==Merchant||role==Innkeeper?2:role==Bandit||role==Wolf?3:0;
+    int address=address5(bin(h),bin(t),bin(f),int(hour/6)%4,group);float best=-100;int chosen=Loiter;
+    for(int a=0;a<LifeCount;a++){
+        float score=float((life_[address*6+a/2]>>((a%2)*4))&15)/15;
+        if(a==Socialize)score+=loneliness*.5f;
+        if(a==Sleep&&group!=3&&(hour>=22||hour<6))score+=.65f;
+        if(a==Patrol&&role!=Guard)score=-10;
+        if(a==Rob&&role!=Bandit&&role!=Wolf)score=-10;
+        if(a==Forage&&role==Hunter)score+=.35f;
+        if(a==Pray&&role==Scholar)score+=.2f;
+        if(a==Work&&(role==Merchant||role==Innkeeper))score+=.15f;
+        if(a==Loiter)score+=stress*.2f;
+        if(a==Eat&&h<.3f)score=-5;if(a==Drink&&t<.3f)score=-5;
+        score+=random01(hash(identity,uint32_t(a)))*.035f;
+        if(score>best){best=score;chosen=a;}
+    }
+    if(h>.93f&&h>=t)return Eat;if(t>.93f)return Drink;if(f>.97f)return Sleep;
+    return Life(chosen);
 }
 float Bank::context(int action,float n,float f,float c,float a,float phase)const{
     int i=address5(bin(n),bin(f),bin(c),bin((a+1)*.5f),bin(phase));return float((context_[i*3+action/2]>>((action%2)*4))&15)/15;
 }
 MotionCell Bank::motion(Action a,float crowd,float fatigue,float confidence)const{return motion_[address4(std::min(3,int(a)),bin(crowd),bin(fatigue),bin(confidence))];}
 bool Bank::allowed(Action a,const Observation& o,Role role){
-    if(a==Engage)return role!=Villager&&role!=Merchant&&o.visible&&o.enemy>=0&&!o.blockedShot&&!o.critical;
+    if(a==Engage)return (role==Guard||role==Bandit||role==Wolf||role==Hunter)&&o.visible&&o.enemy>=0&&!o.blockedShot&&!o.critical;
     if(a==Aid)return o.ally>=0&&o.aid>.05f&&o.danger<.72f&&!o.critical;
     if((o.critical&&o.danger>.2f)||o.danger>.92f)return a==Flee||a==Report;
     if(a==Routine&&o.visible&&o.distance<7)return false;
@@ -132,7 +192,7 @@ uint64_t Bank::checksum()const{
     auto add=[&](uint8_t b){h=(h^b)*1099511628211ull;};
     // Hash members explicitly; padding bytes are not deterministic data.
     for(auto& b:branches_){add(b.action);add(uint8_t(b.prototype));add(uint8_t(b.prototype>>8));add(uint8_t(b.support));add(uint8_t(b.support>>8));for(auto v:b.cues){add(uint8_t(v));add(uint8_t(v>>8));}for(auto v:b.gate)add(uint8_t(v));for(auto v:b.residual)add(uint8_t(v));}
-    for(auto& m:motion_){add(uint8_t(m.speed));add(uint8_t(m.steer));add(uint8_t(m.avoidance));add(uint8_t(m.response));}for(auto v:context_)add(v);return h;
+    for(auto& m:motion_){add(uint8_t(m.speed));add(uint8_t(m.steer));add(uint8_t(m.avoidance));add(uint8_t(m.response));}for(auto v:context_)add(v);for(auto v:life_)add(v);for(auto v:social_)add(v);return h;
 }
 Workers::Workers(unsigned n){
     n=std::max(1u,std::min(32u,n));

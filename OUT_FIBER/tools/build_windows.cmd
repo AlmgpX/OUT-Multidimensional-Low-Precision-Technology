@@ -1,3 +1,4 @@
+@rem SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
 @echo off
 setlocal
 rem Copyright (c) 2026 Alex Merqury. Source review license; see ../../LICENSE.
@@ -16,7 +17,7 @@ if errorlevel 1 (
 )
 if not exist "%FIBER_OUT%" mkdir "%FIBER_OUT%"
 pushd "%FIBER_OUT%"
-cl /nologo /std:c++17 /EHsc /O2 /fp:precise /utf-8 /W4 /MT /I"%FIBER_ROOT%\include" "%FIBER_ROOT%\src\main.cpp" "%FIBER_ROOT%\src\bank.cpp" "%FIBER_ROOT%\src\world.cpp" "%FIBER_ROOT%\src\benchmark.cpp" "%FIBER_ROOT%\tests\selftest.cpp" "%FIBER_ROOT%\src\gui_win32.cpp" /Fe:OUT_FIBER.exe /link user32.lib gdi32.lib gdiplus.lib
+cl /nologo /std:c++17 /EHsc /O2 /fp:precise /utf-8 /W4 /MT /I"%FIBER_ROOT%\include" "%FIBER_ROOT%\src\main.cpp" "%FIBER_ROOT%\src\bank.cpp" "%FIBER_ROOT%\src\world.cpp" "%FIBER_ROOT%\src\life.cpp" "%FIBER_ROOT%\src\sandbox.cpp" "%FIBER_ROOT%\src\content.cpp" "%FIBER_ROOT%\src\benchmark.cpp" "%FIBER_ROOT%\tests\selftest.cpp" "%FIBER_ROOT%\src\gui_win32.cpp" /Fe:OUT_FIBER.exe /link user32.lib gdi32.lib gdiplus.lib
 set "FIBER_RESULT=%errorlevel%"
 popd
 exit /b %FIBER_RESULT%

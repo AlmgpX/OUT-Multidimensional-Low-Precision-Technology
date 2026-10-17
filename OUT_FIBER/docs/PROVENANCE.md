@@ -1,31 +1,41 @@
 # OUT FIBER provenance and data boundary
 
-Inputs supplied by the publisher: `OUT_FIBER_TALES_Вересковый_предел_v01.html` and
-`OUT_FIBER_LAB_Crystal_Field_03.html`. Their SHA256 values are recorded in SNAPSHOT.json.
-Original files remain unchanged outside this repository. No private Google Doc,
-Asana discussion, HTML story dataset or original corpus is redistributed here.
+Publisher inputs: `OUT_FIBER_TALES_Вересковый_предел_v01.html` and
+`OUT_FIBER_LAB_Crystal_Field_03.html`. Original files remain unchanged outside this repository;
+their SHA256 values are in [SNAPSHOT.json](../SNAPSHOT.json). No private Drive document or Asana
+conversation is published. The publisher's current request authorizes the native C++ sandbox.
+No OUT CORE engine or Unity project files were changed for this module.
 
-The publisher's current request authorizes this standalone C++ benchmark. The older
-RFC's instruction to defer C++ integration is historical context, not a current veto.
-No OUT CORE engine files or Unity project files were changed to build OUT FIBER.
+## Explicitly requested narrative source
 
-Preserved design mechanisms: coarse 3D anchors with competing branches, int4
-prototypes, int8 cue gates and residuals, local boundary overlap, per-actor memory,
-inhibition/attention, committed decisions, seeded low-risk ambiguity and a hard
-action gate. New benchmark factors include real 4D motor and 5D context addresses,
-shared flow fields, batched parallel simulation and RPG survival interactions.
+Tales 0.2 includes the publisher-requested 20 named characters, authored biographies, secrets,
+introductory lines, vows, pockets, eight location descriptions and four original quest concepts.
+They are represented in `src/content.cpp` and RPG logic, not as the original HTML file.
+This intentionally published game narrative is distinct from the withheld paid model datasets.
+It is also subject to the repository license; public visibility is not a free project-use grant.
 
-This is not a byte-for-byte port of every JS subsystem. The procedural teacher is
-new source code for this benchmark, generated calibration exists only in process memory,
-and it is not a paid Guard/Motor dataset. There is no published baked model payload,
-animation bank, training sequence corpus, or raw actor trajectory dataset. Aggregate
-timing reports and an actual native-window screenshot are publication evidence.
+## New implementation and synthetic reference fitting
 
-The compact model is fitted at process startup, then remains read-only. No customer
-dataset, runtime learning service or live weight update is required. The separately
-released OUT Guard model remains unchanged. No AI-quality or novelty claim follows
-from timing, synthetic teacher matching, or the number of array dimensions.
+Preserved mechanisms include coarse 3D anchors with competing branches, int4 prototypes, int8
+cue gates/residuals, bounded overlap, memory, inhibition, attention, commitment, seeded safe
+ambiguity and a hard action gate. New C++ implementation adds 4D motor and 5D context/routine
+addresses, social-table fitting, shared navigation, distance tiers, actor schedules, homes,
+parallel batches, player survival, dialogue, quests, camp crafting/growing and local saves.
+This is not a byte-for-byte port of all JavaScript subsystems.
 
-Source architecture: Alex Merqury (Алексей Савельев). OpenAI Codex assisted with this
-C++ implementation, verification, native UI and documentation. No generative image
-service was used for the native screenshot.
+The new procedural teachers are published source. Calibration samples and fitted tables are
+created in RAM once at process startup; runtime observations do not alter the tables. No bank
+payload, raw training/holdout sequence, actor trajectory corpus, Guard baseline, Motor pose/
+response bank, private animation or customer telemetry is imported or committed. World resource
+piles and camps are deterministic game state, not a paid training dataset. Runtime save files
+and delivery executables/ZIPs stay outside Git.
+
+Aggregate CPU reports, source hashes and real native-window PNGs are publication evidence.
+Screenshot capture uses the actual software renderer. Night capture advances a seeded world;
+other captures select ordinary UI views. No generative image service was used.
+The historical Lab 0.1 14-check report was not reproduced. Model size, dimensions, teacher
+agreement and performance measurements do not establish AI novelty or real-world effectiveness.
+
+Architecture and product direction: **Alex Merqury (Алексей Савельев)**.
+OpenAI Codex assisted with C++ implementation, verification, native UI and documentation.
+The separately delivered frozen OUT Guard model remains unchanged.

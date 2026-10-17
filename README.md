@@ -23,8 +23,10 @@ and [Commercial & AI Licensing](COMMERCIAL_AND_AI_LICENSING.md).
 
 ## Concrete applications
 
-**New: [OUT FIBER](OUT_FIBER/README.md)** — native C++17 RPG survival sandbox and
-3D/4D/5D behavior benchmark, with actual local measurements and no paid asset datasets.
+**[OUT FIBER / Tales 0.2](OUT_FIBER/README.md)** — native C++17 RPG sandbox: daily life,
+128 homes, 20 authored characters, four quests, camp crafting/growing, save/load and a
+3D/4D/5D low-precision behavior benchmark with distance scheduling and actual measurements.
+No paid Guard/Motor model datasets are included.
 
 | Product | Mechanisms exposed for inspection | Limits |
 | --- | --- | --- |

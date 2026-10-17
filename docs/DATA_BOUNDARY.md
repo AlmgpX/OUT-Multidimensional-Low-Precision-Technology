@@ -31,7 +31,12 @@ already present in any other repository, download, cache or previously shared ar
 ## OUT FIBER benchmark addition
 
 OUT FIBER publishes a new procedural benchmark teacher in source form. At process
-startup it generates its own small branch bank in memory; no fitted bank, paid asset
+startup it generates its own branch, motion, context, daily-life and social tables in memory; no fitted bank, paid asset
 payload, teacher corpus file or actor-trajectory dataset is committed. Aggregate CPU
-reports and one real native-window PNG are allowed publication evidence. This does
+reports and reviewed real native-window PNGs are allowed publication evidence. This does
 not change the exclusions for OUT Guard/Motor assets or their original corpora/tools.
+
+Tales 0.2 intentionally includes the publisher-requested authored characters, location lore and
+quest concepts in C++ story source. This narrative is not the withheld Guard/Motor model or
+training dataset. Runtime camp/world saves remain excluded. Every published source/script/build
+file starts with the repository license identifier, checked by Tools/audit_publication.py.

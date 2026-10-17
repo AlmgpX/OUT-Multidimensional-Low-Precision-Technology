@@ -2,7 +2,7 @@
   "module": "OUT FIBER / Heather Reach",
   "rightsHolder": "Алексей Савельев",
   "publishingPseudonym": "Alex Merqury",
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "sourceInputsSha256": {
     "OUT_FIBER_TALES_Вересковый_предел_v01.html": "1200cd7ad86457c7fdae443ce9e754e48fd65adab4541e3dcd0a350323640a6a",
     "OUT_FIBER_LAB_Crystal_Field_03.html": "f30083567235c5c319fe5b2e960d40ae7cbb81ae3f0f908c11afb18593981e8d"
@@ -10,20 +10,37 @@
   "originalInputsPublished": false,
   "paidDatasetsIncluded": false,
   "nativeScreenshotSha256": "4681b876c7e529dd1bf62f639fedf950cdaa56460ab504423497ae686ea355ea",
-  "bankBytes": 11392,
+  "bankBytes": 23168,
   "mindBytes": 52,
-  "validationAssertions": 4473,
-  "validationScope": "Native Windows C++ module; not the historical Lab 0.1 gate or real-world AI efficacy.",
+  "validationAssertions": 2282,
+  "validationScope": "Native Windows C++ RPG sandbox, functional regression and headless CPU timing; not historical Lab gate, real-world AI efficacy or other-platform certification.",
   "sourceSha256": {
-    "CMakeLists.txt": "9b79cb2f3244fd96ee6a21807034eccf62e80cf8b563008c250024473467e362",
-    "include/fiber.hpp": "707a8e1dfc1bffffbff6edf4f74d72c738021b014f1d73c9ced471431ef246e8",
-    "src/bank.cpp": "f503445fb17722a8f4d6abf34214fe5cb50c23adc45bf653a6e963144ce01273",
-    "src/benchmark.cpp": "8c4e36cb9df65f8c477b645d3a34b9682d794a4499af3a0551f3759b8692c75b",
-    "src/gui_win32.cpp": "c2a8b4af004943bfcd94dcad6183301ca5793fdc3a676bcff0a5832d295f83aa",
-    "src/main.cpp": "ba662026dc394d465a8d76f4fe1dfdbc6cb5d6e737263204b51d1b7a8d4b674c",
-    "src/world.cpp": "685d120debf396b6b454c6b1daaa35f0df902df382477e3062ecd8a040244c2a",
-    "tests/selftest.cpp": "e7e3ac5d068f94ab10b0a586a03e6b16963e45f4b2bfd9ed61a51be0a285e055",
-    "tools/build_windows.cmd": "e07f8b39555511910b6178808a3963744018638af13711a8c53b19c4aedb4a6a",
-    "tools/run_benchmarks.ps1": "7786064ef3e475a91dc1a71da130bfe0bedf2ac54dc4f4390dab8712d58f210a"
-  }
+    "CMakeLists.txt": "d72d863f9f801d7f8b9bc2e2a09247279a6209265145c4107b02578e1f836c7a",
+    "include/fiber.hpp": "0d811f1d5e73184263bbf1b547bc5c7997dbf48c752a426be0790c76379ee0db",
+    "src/bank.cpp": "6ad77e8a728588d398c9b6454e19d701fb4ffd6d4bc8002ed2179b6362f11996",
+    "src/benchmark.cpp": "57cfededb40b7b28c4c067187e706ae907b39b4deba9fcfc6ce489d7ddc75d5d",
+    "src/content.cpp": "cafb6571f1fbe52b1f83d37db734996a949b1e815850d80395d2d1bdb19d7b34",
+    "src/gui_win32.cpp": "c62a2cb2a075190f37f1d5391c51736f9002513c351ac6cbac5b60d3c67a4a1f",
+    "src/life.cpp": "4f886795996caec328d8e4ff09b9c9dd3f161061b695f83f7d57dc8af567fe34",
+    "src/main.cpp": "dd81f1db2512846324378e4615dc55ed5e4d4a8c34513a6f4f25778ae2d4d25e",
+    "src/sandbox.cpp": "1076d903807e8816ddc9fd6321cb67e694854dfe2df949195641c7ee824df92f",
+    "src/world.cpp": "5f4e1dd9d629549b247728866916b46836f60495080d9967eee3e301bb56e67e",
+    "tests/selftest.cpp": "33c41f0ae7d4ae1e56a0a5cbdb0a4c7d9bbb9720be7ed4a88fb4b5975879eeb3",
+    "tools/build_windows.cmd": "086b6c6790170382cb7e3ea12a5fa51618320019777bb1bb0bc70b359f7c2445",
+    "tools/run_benchmarks.ps1": "3d7e3e38e499395c90f29892b557f0ac8b2f5f009f98c58ec165e258cb4245a5"
+  },
+  "version": "0.2.0",
+  "actorBytes": 216,
+  "authoredStoryPublished": "Publisher-requested Tales characters, location lore and four quest concepts in C++ source; original HTML stays outside Git.",
+  "nativeScreenshots": {
+    "OUT_FIBER/docs/OUT_FIBER_Heather_Reach.png": "4681b876c7e529dd1bf62f639fedf950cdaa56460ab504423497ae686ea355ea",
+    "OUT_FIBER/docs/Tales-Crafting-v02.png": "b68e74d5ade89bd28c56413ff46d5db60a011e4eeeac3b7c0479b46ab10076d2",
+    "OUT_FIBER/docs/Tales-Dialogue-v02.png": "eb8fd261b72d0a389d383c3eee902c2bfb15349f3c2ce599cb5ce51e2cf7c54d",
+    "OUT_FIBER/docs/Tales-Game-v02.png": "bd981f1610449007ecb6a72824c74343b4df0b75ca2e9edfdfe47c42c2cdfe06",
+    "OUT_FIBER/docs/Tales-Inventory-v02.png": "2052afadbe2bf8566762b74b86c52bdbcd58d33a43d86b8af0cb8254d2eaefaf",
+    "OUT_FIBER/docs/Tales-Journal-v02.png": "00ae27c79f00bc065281729e667d0ea26a26cf9899ee856b1114b69d3b512414",
+    "OUT_FIBER/docs/Tales-Night-v02.png": "1f6f35042ced3ac969b3d39dc14809710b961637ecbf7b56b5ce0aeeb2dc13ab",
+    "OUT_FIBER/docs/Tales-World-v02.png": "35f9de538c79410db3cdf0e458bf789eb7cb64017ff043c62f5fb4247c8b1852"
+  },
+  "publisherExecutableSha256": "1d8bdeeb48f37383034575185b0492c8875dccf0a27aaaa73cf913b6b77f1011"
 }

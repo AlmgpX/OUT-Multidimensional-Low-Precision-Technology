@@ -1,5 +1,5 @@
-// Copyright (c) 2026 Алексей Савельев (Alex Merqury / AlexMerq). All rights reserved.
 // SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
+// Copyright (c) 2026 Алексей Савельев (Alex Merqury / AlexMerq). All rights reserved.
 // Source review only. Project use and AI training require separate applicable licenses. See LICENSE.
 using UnityEngine;
 

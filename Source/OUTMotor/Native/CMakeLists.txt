@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
 # Copyright (c) 2026 Алексей Савельев (Alex Merqury). Source review only; see LICENSE.
 cmake_minimum_required(VERSION 3.20)
 
