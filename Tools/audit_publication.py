@@ -13,6 +13,13 @@ if fiber_snapshot.is_file():
   p=root/'OUT_FIBER'/name
   if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=expected:
    errors.append('OUT FIBER source hash mismatch: '+name)
+native_snapshot=root/'Native/SNAPSHOT.json'
+if native_snapshot.is_file():
+ native=json.loads(native_snapshot.read_text(encoding='utf-8'))
+ for name,expected in native['sourceSha256'].items():
+  p=root/name
+  if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=expected:
+   errors.append('Native Guard/Motor source hash mismatch: '+name)
 for item in provenance['files']:
  p=root/item['path']
  if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=item['publishedSha256']:
@@ -24,7 +31,7 @@ except subprocess.CalledProcessError:
 if not listed:
  listed=[str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and '.git' not in p.parts and 'bin' not in p.parts and 'obj' not in p.parts]
 blocked_names={'GuardBuiltInTemporalModel.cs','OUTMotorData.cs','BakedModel_manifest.json'}
-blocked_ext={'.asset','.fbx','.glb','.gltf','.dll','.exe','.bin','.save','.ofib','.onnx','.npy','.npz','.csv','.jsonl','.zip','.tgz','.unitypackage'}
+blocked_ext={'.asset','.fbx','.glb','.gltf','.dll','.exe','.lib','.obj','.pdb','.exp','.ilk','.bin','.save','.ogsave','.hex','.ofib','.onnx','.npy','.npz','.csv','.jsonl','.zip','.tgz','.unitypackage'}
 checked=0;script_count=0
 for name in listed:
  p=root/name
@@ -44,7 +51,7 @@ for name in listed:
   errors.append('Long encoded payload: '+name)
  if re.search(r'gh[pousr]_[A-Za-z0-9]{30,}|-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----',text):
   errors.append('Potential secret: '+name)
- script=p.suffix.lower() in {'.cs','.cpp','.h','.hpp','.py','.js','.cjs','.mjs','.ps1','.cmd','.bat','.sh','.csproj','.props'} or p.name=='CMakeLists.txt' or name.endswith('.cs.txt')
+ script=p.suffix.lower() in {'.cs','.c','.cc','.cxx','.cpp','.h','.hpp','.py','.js','.cjs','.mjs','.ps1','.cmd','.bat','.sh','.csproj','.props'} or p.name=='CMakeLists.txt' or name.endswith('.cs.txt')
  if script:
   script_count+=1
   if not text.splitlines() or 'SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0' not in text.splitlines()[0]:

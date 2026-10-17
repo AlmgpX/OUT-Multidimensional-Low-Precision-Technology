@@ -1,0 +1,6 @@
+{
+  "format": "OUT-NATIVE-C-ABI-1",
+  "assertions": 50,
+  "passed": true,
+  "scope": "Actual Windows x64 DLL loaded using Python ctypes; synthetic fixture, no Unity editor or paid bank."
+}

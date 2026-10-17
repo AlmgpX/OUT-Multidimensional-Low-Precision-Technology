@@ -57,3 +57,13 @@ Memory protection cannot stop a process owner patching callers. Speed/accelerati
 limits alone cannot prove that movement did not pass through a wall. Motor's flat-floor
 reference contacts are not a general terrain/collision engine. Integration and target
 platform validation remain the developer's responsibility.
+
+## Native C++17 implementation
+
+The [native SDK](../Native/README.md) implements Guard's movement/time/risk/temporal reader,
+protected scalars, authenticated storage/protocols and bounded server arena in C++. Motor adds
+native world/target ownership, complete procedural cache formulas, feet, navigation, event/injury/
+combat/controller logic and renderer-neutral rig/equipment output over the existing C++ solver.
+[The coverage map](../Native/PORT_MAP.md) distinguishes exact differential subsets from reimplemented
+controller/world behavior and remaining Unity authoring/render adapters. This does not add any paid
+bank payload, change the fixed Guard baseline, or automatically replace an installed Unity asset.

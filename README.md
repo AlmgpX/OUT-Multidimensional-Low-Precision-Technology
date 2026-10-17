@@ -4,8 +4,9 @@
 
 Rights holder: **Алексей Савельев**, publishing under the pseudonym **Alex Merqury**.
 
-Public reference source from **OUT Motor** and **OUT Guard**: compact multidimensional
-codebooks, bounded quantized decisions, shared data and continuous stateful correction.
+Public reference source and **native C++17 cores for OUT Motor and OUT Guard**: compact
+multidimensional codebooks, bounded quantized decisions, shared data and continuous stateful correction.
+The original C# remains available for comparison and Unity integration.
 
 **Read the source. Purchase the applicable license before project use.**
 This is proprietary source-visible material, not open source and not a free asset.
@@ -22,6 +23,10 @@ and [Commercial & AI Licensing](COMMERCIAL_AND_AI_LICENSING.md).
 - [По-русски](README.ru.md)
 
 ## Concrete applications
+
+**[Native Guard + Motor SDK](Native/README.md)** — C++17 cores, a C ABI DLL and static library,
+with original C# differential checks and data/model payloads excluded. Native execution needs no C# runtime;
+Unity Inspector/rendering/prefab integration still needs an engine adapter. See the [port map](Native/PORT_MAP.md).
 
 **[OUT FIBER / Tales 0.2](OUT_FIBER/README.md)** — native C++17 RPG sandbox: daily life,
 128 homes, 20 authored characters, four quests, camp crafting/growing, save/load and a

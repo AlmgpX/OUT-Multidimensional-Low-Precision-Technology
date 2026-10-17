@@ -40,3 +40,12 @@ Tales 0.2 intentionally includes the publisher-requested authored characters, lo
 quest concepts in C++ story source. This narrative is not the withheld Guard/Motor model or
 training dataset. Runtime camp/world saves remain excluded. Every published source/script/build
 file starts with the repository license identifier, checked by Tools/audit_publication.py.
+
+## Native Guard/Motor SDK addition
+
+Native C++ implementations and format/type definitions are published, together with small synthetic
+regression fixtures and aggregate reference/DLL verification results. The tests deliberately generate
+their own tiny motion fixture and nonproduction temporal lookup in memory. These are not the paid
+asset's bank, fixed baseline or training dataset. Cross-language envelopes, temporary RSA test keys,
+raw sampled reference rows, static/import libraries, DLLs and executable deliveries stay outside Git.
+No model fitter, authored animation or new shipped dataset is published by the language port.

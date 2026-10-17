@@ -1,0 +1,10 @@
+<!-- SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0; see ../../LICENSE -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><EnableDefaultCompileItems>false</EnableDefaultCompileItems><CheckForOverflowUnderflow>false</CheckForOverflowUnderflow></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Source/OUTGuard/Core/*.cs" />
+    <Compile Include="../../Source/OUTMotor/Runtime/OUTMotorMotionCache.cs" />
+    <Compile Include="../../Source/OUTMotor/Runtime/OUTMotorFootPlanner.cs" />
+    <Compile Include="reference_driver.cs" /><Compile Include="unity_math_fixture.cs" />
+  </ItemGroup>
+</Project>

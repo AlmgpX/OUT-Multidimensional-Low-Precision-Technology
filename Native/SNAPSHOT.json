@@ -1,0 +1,69 @@
+{
+  "module": "OUT Guard / OUT Motor native C++17 SDK",
+  "version": "0.1.0",
+  "date": "2026-10-18 Europe/Minsk",
+  "rightsHolder": "Алексей Савельев",
+  "architectureAndDirection": "Alex Merqury",
+  "implementationAssistance": "OpenAI Codex",
+  "license": "LicenseRef-OUT-Source-Review-1.0",
+  "paidDatasetsIncluded": false,
+  "shippedGuardModelModified": false,
+  "currentUnityProjectModified": false,
+  "nativeAssertions": 8445,
+  "referenceRows": 7423,
+  "referenceValues": 33043,
+  "cAbiAssertions": 50,
+  "platform": "Windows x64, MSVC 19.44, C++17 /O2 /fp:precise /MT /utf-8 /W4",
+  "cmakeExecuted": false,
+  "runtimeImports": [
+    "bcrypt.dll",
+    "KERNEL32.dll"
+  ],
+  "publisherLocalArtifacts": {
+    "out_native.dll": {
+      "sha256": "eb1bef990849f1513b054ccdb352522977135af31d44fa46fa8650119611d507",
+      "bytes": 309760
+    },
+    "out_native_core.lib": {
+      "sha256": "a700fe92f2fe3f7f27e41f3f1b881a79a8a2c11d41037e4bb0c9fbb29e7537ba",
+      "bytes": 3677946
+    },
+    "out_native.lib": {
+      "sha256": "155d420de119aae0f85f6ffca3e70c7e39633c5b61c965ad8837b5e7a7b879dd",
+      "bytes": 6506
+    },
+    "out_native_checks.exe": {
+      "sha256": "e8469bdca4f82c6c8713264c937de4a73f7c606e5a2ecbfe3352b649e6504530",
+      "bytes": 640512
+    }
+  },
+  "sourceSha256": {
+    "Native/.clang-format": "7b15cd147626a4e69477e1c275878c40274eaafc5ba0b0750802f60306ef7bfe",
+    "Native/CMakeLists.txt": "e9b02dbf3977855df5444483c3149526063b7234f476aeb5448c98540781e4c5",
+    "Native/include/out_native_c.h": "3604702286c588038e99df0603ce0dc569437f4ba8a6c4c231cdf346cb6c4a85",
+    "Native/src/c_api.cpp": "8669f92189fc1096f55efe565adc9b47e462a01faf60bc1003c961978ebc48e8",
+    "Native/tests/Reference.csproj": "ff9a96b271177d26a8cf75883187d1cc1d96770a1d43eb4074c14d9ebba3150c",
+    "Native/tests/c_header_check.c": "ba3c4dd09b5517017ed9d7a38e414ead8e608a113a1f888cc3061b7d67dadead",
+    "Native/tests/native_checks.cpp": "0736431726e9b3f1e22e216b78b74e11d81a9c7b35905dba36766a676c61f45b",
+    "Native/tests/reference_driver.cs": "5ab55aaa5b48df3e85ee1ae522950ac9455ea678aa041ef93b30cb7559fcf1d3",
+    "Native/tests/unity_math_fixture.cs": "fd102227d56bbfc0c783fe6667b0d14247009fe4cdb61997a6f18ad594ad3463",
+    "Native/tools/build_windows.cmd": "85cac984fa19d681ed0136da8c207055d3ce3906b895e0084708bebd37b5a9d2",
+    "Native/tools/verify_c_api.py": "4149ffc51ef44fb0ad11365e5c852d8456dcaabf3e3b176be01de894535802b0",
+    "Native/tools/verify_reference.py": "aea5a619fe2dc6d0b1c73023176c9798a31cd3102b4b5d7eca93cd37eeb1802c",
+    "Source/OUTGuard/Native/guard_behavior.cpp": "59eb00291842edefd8f805a2e2d185a79a48f321774813980d331d938ad33881",
+    "Source/OUTGuard/Native/guard_crypto.cpp": "adf5f1f515274c79c245b022b5c14a8a01daea69173153e7709403f888f289cd",
+    "Source/OUTGuard/Native/guard_server.cpp": "8dfabd5733b1fbe28f26c1b5037ac8fcf7f96e636bc27a02e6a69d3dc4cf0082",
+    "Source/OUTGuard/Native/out_guard.hpp": "e263808f437b7aa2dd70bf563fb6a291178625739e1646a280a89958b4f0c59e",
+    "Source/OUTMotor/Native/CMakeLists.txt": "f387722fded3b2a7b048cfa589269bedb0cb12f2bcd4635f51a05800f48873d1",
+    "Source/OUTMotor/Native/OUTMotorNative.cpp": "e3063f6965f83467d502c9d9e561fc167a1e541b1dd3bf79ab7be4ba9cb3db49",
+    "Source/OUTMotor/Native/OUTMotorNative.h": "f5ec6a00a232f25c00af7514e7f9c448261a904315f1bdbde15de23a3b300005",
+    "Source/OUTMotor/Native/motor_combat.cpp": "ad5e0157cca9181a4d0d661a7c9865b59ef08fb248363476633f19f39a3894cc",
+    "Source/OUTMotor/Native/motor_motion.cpp": "d313f897b4ef4f45848eccf3e91aaae35715cb2604938f3f1d81e7248d1f14a3",
+    "Source/OUTMotor/Native/motor_navigation.cpp": "a6c7c4016c73885890183b1feb79de339b9c3b74dca322c7f5f5da85a4ace4a9",
+    "Source/OUTMotor/Native/motor_rts.cpp": "64312935404312a948d693f888861fc7893a77ccf4770746eac2c0343085abea",
+    "Source/OUTMotor/Native/motor_view.cpp": "cab8987483a575f28ba40a76e59dc5f214df29d0786d7086569c25432cf08fd3",
+    "Source/OUTMotor/Native/motor_world.cpp": "9222fc3ff12df2f8ea70dccae737bb9e8df51be88d03231877f1340b63182bb6",
+    "Source/OUTMotor/Native/out_motor.hpp": "6727996eda64e68ff813f2fc1df95ad82d5d89c5ef972929c8687c64d824c053"
+  },
+  "scope": "Native reference SDK and C bridge. Old C# and Unity adapters retained. No real-game efficacy, full Unity/render parity, portability or speedup claim."
+}

@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 100
+SortIncludes: false
+PointerAlignment: Left
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty

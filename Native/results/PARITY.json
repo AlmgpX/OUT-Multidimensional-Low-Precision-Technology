@@ -1,0 +1,36 @@
+{
+  "format": "OUT-NATIVE-REFERENCE-PARITY-1",
+  "localDate": "2026-10-18",
+  "reference": "Original repository C# Guard core, Motor MotionCache and FootPlanner sources",
+  "rows": 7423,
+  "comparedValues": 33043,
+  "rowsByKind": {
+    "K": 1,
+    "H": 1,
+    "F": 1,
+    "M": 200,
+    "C": 160,
+    "T": 120,
+    "S": 180,
+    "P": 6400,
+    "G": 360
+  },
+  "maximumAbsoluteDifference": {
+    "M": 0.0,
+    "C": 0.0,
+    "T": 0.0,
+    "S": 0.0,
+    "P": 4.952087406806527e-08,
+    "G": 1.4697265612539923e-05
+  },
+  "doubleTolerance": 1e-09,
+  "motionFloatTolerance": 2e-05,
+  "footFloatTolerance": 0.0002,
+  "interop": [
+    "C++ decodes original C# AES-256-CBC/HMAC envelope",
+    "C# decodes native envelope",
+    "Native verifies original C# RSA-2048/SHA256 manifest and rejects edited signature"
+  ],
+  "passed": true,
+  "scope": "Windows MSVC/.NET 10; synthetic fixture only. Motor reference uses test-only Vector3/Quaternion/Mathf shim, not Unity physics/rendering or withheld licensed banks. This is not full-game or cross-platform certification."
+}

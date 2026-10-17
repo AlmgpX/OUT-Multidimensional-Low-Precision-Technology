@@ -13,4 +13,10 @@
 *.tgz
 *.zip
 *.save
+*.ogsave
+*.obj
+*.lib
+*.pdb
+*.exp
+*.ilk
 .DS_Store

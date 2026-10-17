@@ -7,3 +7,11 @@ OUT FIBER Tales 0.2: PASS 2282 assertions; 11 valid headless reports, 1-vs-8-wor
 See OUT_FIBER/benchmarks/v02/RESULTS.md for workload and limits.
 Publication audit enforces license-first source headers, source/screenshot hashes and excluded paid data/payload paths.
 No real-game detection benchmark, complete Unity import or industry certification is claimed.
+
+Native Guard/Motor SDK / 2026-10-18:
+Direct MSVC x64 build: successful, no compiler warnings; C11 bridge header compilation passed.
+Native checks: PASS 8445 assertions (includes exhaustive lookup/cache samples, not that many security scenarios).
+Original-C# differential subsets: PASS 7423 rows / 33043 values, with explicit float tolerances.
+Bidirectional AES/HMAC save compatibility and C# RSA signed-manifest checks: PASS.
+Actual Windows DLL C ABI: PASS 50 assertions; runtime imports bcrypt.dll and KERNEL32.dll.
+See Native/results/RESULTS.md. Complete installed Unity assets and CMake were not executed.

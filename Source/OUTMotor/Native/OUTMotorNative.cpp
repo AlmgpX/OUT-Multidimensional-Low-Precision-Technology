@@ -297,9 +297,9 @@ struct Actor {
 
       return;
 
-    V u = p[j] - p[i], v = p[k] - p[j];
+    V u = p[j] - p[i], lowerSegment = p[k] - p[j];
 
-    float lu = mag(u), lv = mag(v);
+    float lu = mag(u), lv = mag(lowerSegment);
 
     if (lu < 1e-5f || lv < 1e-5f)
 
@@ -307,15 +307,15 @@ struct Actor {
 
     u = u / lu;
 
-    v = v / lv;
+    lowerSegment = lowerSegment / lv;
 
-    float cosine = dot(u, v), target = clamp(cosine, minCos, maxCos);
+    float cosine = dot(u, lowerSegment), target = clamp(cosine, minCos, maxCos);
 
     if (std::abs(target - cosine) < 1e-5f)
 
       return;
 
-    V g0 = -(v - u * cosine) / lu, g2 = (u - v * cosine) / lv, g1 = -g0 - g2;
+    V g0 = -(lowerSegment - u * cosine) / lu, g2 = (u - lowerSegment * cosine) / lv, g1 = -g0 - g2;
 
     float wi = im[i], wj = im[j], wk = im[k],
 

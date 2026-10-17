@@ -242,8 +242,8 @@
       "product": "OUT Motor",
       "originalRelativePath": "OUT_Motor/Native~/OUTMotorNative.cpp",
       "originalSha256": "e6a30d50bf83f3dea647dc54c896c0ded665e8650016d6d841439c808d4d4010",
-      "publishedSha256": "19a6d344c6787b922f64604894b21f4451636a50bcce9887a4f91f46be954692",
-      "change": "License identifier placed first, copyright notice added; text line endings normalized. No algorithm edits."
+      "publishedSha256": "e3063f6965f83467d502c9d9e561fc167a1e541b1dd3bf79ab7be4ba9cb3db49",
+      "change": "License-first header and normalized text; a shadowing local variable in cone() renamed to lowerSegment. No solver algorithm change."
     },
     {
       "path": "Source/OUTMotor/Native/OUTMotorNative.h",
@@ -311,5 +311,6 @@
     }
   ],
   "publishingPseudonym": "Alex Merqury (AlexMerq)",
-  "licenseHeaderReviewDate": "2026-10-18"
+  "licenseHeaderReviewDate": "2026-10-18",
+  "nativePortSnapshot": "Native/SNAPSHOT.json"
 }
