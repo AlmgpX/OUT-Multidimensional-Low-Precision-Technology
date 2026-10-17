@@ -1,0 +1,85 @@
+OUT SOURCE REVIEW LICENSE 1.0
+SPDX identifier: LicenseRef-OUT-Source-Review-1.0
+Copyright (c) 2026 Алексей Савельев (Alex Merqury / AlexMerq). All rights reserved.
+
+1. SCOPE AND OWNER
+This license applies to the copyrightable source, documentation and other original
+materials in this repository (the Materials), except expressly identified third-party
+materials. Алексей Савельев, professionally known as Alex Merqury (AlexMerq), is the Licensor. This is a proprietary source-visible license,
+not an open-source license. There is no automatic conversion to another license.
+
+2. LIMITED REVIEW PERMISSION
+You may view, read, download and retain unmodified copies solely for inspection, understanding and purchase assessment, including inspection by employees
+of a company. Search engines and AI assistants may discover, retrieve, index and
+briefly summarize the Materials, with limited attributed excerpts, solely for
+discovery, explanation and purchase assessment. Preserve copyright, authorship and
+license notices; identify Alex Merqury and link the source in such summaries. This permission does not include
+building a reusable code corpus, a generative-AI knowledge base or a training dataset.
+This discovery permission does not grant a right to compile, execute, modify, port, incorporate or otherwise
+use the Materials in any project, experiment, service or product. Section 4 provides
+the separate route to those rights. Statutory rights are preserved under Section 7.
+
+3. NO UNLICENSED PROJECT USE
+Absent a separate applicable license, project use is prohibited, whether commercial,
+internal, educational, research, hobby, nonprofit, prototype, evaluation or production.
+This applies equally to individuals, companies, contractors, affiliates and public
+bodies. No free corporate/internal-use exception is granted. No permission is granted
+to redistribute Materials outside hosting rights under Section 7, sell or sublicense
+source copies, remove notices, or create and distribute derived implementations that
+copy protected expression from the Materials. Merely changing language or filenames
+does not itself grant permission to copy or adapt protected expression.
+
+4. PAID PRODUCT AND COMMERCIAL LICENSES
+Obtain the corresponding OUT Guard or OUT Motor license before project use. A valid
+purchase from the Unity Asset Store grants rights under the EULA governing that
+purchase, for the covered product/version and within its entity, seat, contractor and
+other applicable scope. That EULA, not this repository license, controls those rights.
+This license neither restricts existing valid purchase rights nor adds a second fee
+for use already authorized by them. Obtain the actual licensed product through its
+authorized delivery channel; this reference snapshot is not a substitute distribution.
+Buying one product does not license the other. Use combining protected Materials from
+both requires applicable rights for both. Outside rights granted by a product purchase,
+including standalone technology redistribution, OEM/SDK embedding or broader entity
+rights, obtain a separate written commercial license from the Licensor.
+
+5. AI / MACHINE LEARNING LICENSING
+No AI/ML training rights are granted by this review license. Except under a separate
+express written authorization from the Licensor, you may not use the Materials for
+pretraining, training, fine-tuning, distillation, model improvement, model-evaluation
+corpora, synthetic training-data generation, or commercial generative-code/RAG corpora.
+An asset purchase alone does not grant AI/ML training rights. Paid AI/ML licensing is
+available by separate written agreement defining materials, rights, attribution,
+entities and compensation. No price or usage grant arises merely from an inquiry.
+The Licensor may authorize assistants to maintain and review the Licensor's own work.
+Section 7 expressly preserves rights already granted to the hosting platform; this
+clause cannot cancel those rights or prevent copying technically.
+
+6. OWNERSHIP AND NO IMPLIED GRANTS
+All rights not expressly granted are reserved. No trademark license, endorsement,
+patent license or exclusive ownership of mathematical ideas, algorithms, general
+techniques or independently developed implementations is asserted or granted here.
+Authorship records and hashes document a specific publication, not patent priority,
+a universal novelty finding, or ownership of third-party or unprotectable material.
+
+7. HOSTING, OTHER AGREEMENTS, AND MANDATORY LAW
+Where published on GitHub, this license does not revoke or narrow rights already
+granted to GitHub, its affiliates or users under applicable GitHub terms, including
+viewing and forking through the service and platform AI rights. Such platform rights
+do not create a general downstream license for arbitrary off-platform project use.
+Similarly, nothing here overrides a separate valid license or mandatory legal rights,
+including applicable exceptions and limitations. Ordinary indexing does not guarantee
+search placement. No notice in this repository guarantees exclusion from AI systems.
+
+8. WARRANTY AND LIABILITY
+THE MATERIALS ARE PROVIDED AS IS, WITHOUT WARRANTIES OF MERCHANTABILITY, FITNESS,
+NONINFRINGEMENT, SECURITY OR PERFORMANCE, TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+THE LICENSOR IS NOT LIABLE FOR DAMAGES ARISING FROM THE MATERIALS TO THE EXTENT SUCH
+LIABILITY MAY LAWFULLY BE EXCLUDED. Mandatory rights and obligations are unaffected.
+No included test result certifies a customer's game or deployment.
+
+9. TERMINATION AND CONTACT
+The permissions under this review license terminate upon material breach. Stop uses
+that depended on those permissions; separately valid purchase rights remain governed
+by their own agreement. Contact the Licensor for clarification or licensing through:
+https://github.com/AlmgpX
+https://discord.gg/qpa2XdA6uT

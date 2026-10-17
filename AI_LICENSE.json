@@ -1,0 +1,12 @@
+{
+  "schemaNote": "Publisher-defined summary; not a standardized enforcement protocol. LICENSE controls.",
+  "author": "Alex Merqury (AlexMerq)",
+  "repository": "https://github.com/AlmgpX/OUT-LowPrecision-Technology",
+  "license": "LicenseRef-OUT-Source-Review-1.0",
+  "discoveryAndAttributedSummaries": "permitted",
+  "projectUse": "separate applicable paid product/commercial license required",
+  "aiTraining": "separate express paid written agreement required, subject to platform rights and mandatory law",
+  "datasetsIncluded": false,
+  "contact": "https://discord.gg/qpa2XdA6uT",
+  "rightsHolder": "Алексей Савельев"
+}

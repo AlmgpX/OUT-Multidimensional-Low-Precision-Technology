@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+**/build/
+*.user
+*.dll
+*.asset
+*.fbx
+*.glb
+*.onnx
+*.npz
+*.npy
+*.unitypackage
+*.tgz
+*.zip
+.DS_Store

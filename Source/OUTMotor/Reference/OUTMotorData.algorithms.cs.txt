@@ -1,0 +1,31 @@
+// Copyright (c) 2026 Алексей Савельев (Alex Merqury / AlexMerq). All rights reserved.
+// SPDX-License-Identifier: LicenseRef-OUT-Source-Review-1.0
+// Source review only. Project use and AI training require separate applicable licenses. See LICENSE.
+// EXCERPT ONLY: not a complete compilation unit.
+// Private baked arrays, profile coefficients, and static initializer are deliberately omitted.
+// DecodedResponse, DecodedField and FieldDomain are supplied by the licensed product.
+        private static int Signed4(byte[] bytes, int index)
+        {
+            int x = (bytes[index >> 1] >> ((index & 1) * 4)) & 15;
+            return x > 7 ? x - 16 : x;
+        }
+        public static int ResponseCode(int mode, int error, int speed, int contacts)
+        {
+            int i = ((mode & 3) << 6) | ((error & 3) << 4) | ((speed & 3) << 2) | (contacts & 3);
+            return DecodedResponse[i];
+        }
+        public static Vector3 SampleField(Vector3 delta)
+        {
+            Vector3 q = new Vector3(Mathf.Clamp(delta.x / FieldDomain + 1f, 0, 2),
+                                     Mathf.Clamp(delta.y / FieldDomain + 1f, 0, 2),
+                                     Mathf.Clamp(delta.z / FieldDomain + 1f, 0, 2));
+            int ix = Mathf.Min(1, (int)q.x), iy = Mathf.Min(1, (int)q.y), iz = Mathf.Min(1, (int)q.z);
+            float fx = q.x - ix, fy = q.y - iy, fz = q.z - iz;
+            int k = (iz * 3 + iy) * 3 + ix;
+            Vector3 a = Vector3.LerpUnclamped(DecodedField[k], DecodedField[k + 1], fx);
+            Vector3 b = Vector3.LerpUnclamped(DecodedField[k + 3], DecodedField[k + 4], fx);
+            Vector3 c = Vector3.LerpUnclamped(DecodedField[k + 9], DecodedField[k + 10], fx);
+            Vector3 d = Vector3.LerpUnclamped(DecodedField[k + 12], DecodedField[k + 13], fx);
+            return Vector3.LerpUnclamped(Vector3.LerpUnclamped(a, b, fy),
+                Vector3.LerpUnclamped(c, d, fy), fz);
+        }

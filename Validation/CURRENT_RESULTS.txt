@@ -1,0 +1,7 @@
+Publication snapshot validation / 2026-10-17
+OUT Guard core: PASS 497 checks; protected-read loop allocated 0 managed bytes over 100000 reads.
+OUT Guard security/reference-server scenarios: PASS 63 cases; 0 failed.
+The excluded shipped temporal model was not evaluated or rebuilt.
+OUT Motor Unity tests and native build were not rerun for this source-only snapshot.
+Publication audit: source hashes and excluded data/payload checks passed before publication.
+No real-game detection benchmark, complete Unity import or industry certification is claimed.
